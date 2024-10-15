@@ -1,0 +1,162 @@
+body {
+  background-image: url("/images/splash2.JPG");
+  background-repeat: repeat;
+}
+h1 {
+  font-size: 75px;
+  font-family: "Marck Script", cursive;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.mens {
+  font-size:60px;
+  height: 220px;
+  width: 400px;
+  background-image: url("/images/mens.png");
+  background-size: cover;
+  padding-top: 120px;
+}
+
+.womens {
+  font-size:60px;
+  height: 220px;
+  width: 400px;
+  background-image: url("/images/womens.jpg");
+  background-size: cover;
+  padding-top: 120px;
+}
+
+.jewellery {
+  font-size:60px;
+  height: 220px;
+  width: 400px;
+  background-image: url("/images/Jewellery.png");
+  background-size: cover;
+  padding-top: 120px;
+}
+
+.wedding {
+  font-size:60px;
+  height: 220px;
+  width: 400px;
+  background-image: url("/images/wedding.avif");
+  background-size: cover;
+  padding-top: 120px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+.splash {
+  background-image: url("/images/background_thunderboltsecurity.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-color: rgb(255, 0, 0);
+  min-height: 100%;
+}
+
+nav {
+  position: sticky;
+  background-color: rgba(126, 126, 126, 0.486);
+  top: 0;
+}
+
+ul {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;  color: rgb(255, 0, 34);
+}
+
+footer {
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footeritem {
+  font-size: 1.7vw;
+  padding: 15px 5px;
+  flex-grow: 0;
+}
+
+.socialmediaicon {
+  width: 40px;
+  padding: 0px 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footeritem {
+    font-size: 14px;
+    padding: 5px 10px;
+  
+  }
+}
+
+.services {
+  background-color: red;
+  min-height: 100%;
+  color: yellow;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin: 0px;
+  text-align: center;
+  font-size: 30vw;
+  padding-top: 20vw;
+}
