@@ -1,7 +1,16 @@
+html,
 body {
   background-image: url("/images/splash2.JPG");
   background-repeat: repeat;
+  height: 100%;
+  min-height: 100%;
 }
+
+.main {
+  height: 100%;
+  min-height: 100%;
+}
+
 h1 {
   font-size: 75px;
   font-family: "Marck Script", cursive;
@@ -13,81 +22,36 @@ h2 {
   font-size: 25px;
 }
 
-.mens {
-  font-size:60px;
+.mensbutton {
+  font-size: 60px;
   height: 220px;
   width: 400px;
   background-image: url("/images/mens.png");
   background-size: cover;
-  padding-top: 120px;
 }
 
-.womens {
-  font-size:60px;
+.womensbutton {
+  font-size: 60px;
   height: 220px;
   width: 400px;
   background-image: url("/images/womens.jpg");
   background-size: cover;
-  padding-top: 120px;
 }
 
-.jewellery {
-  font-size:60px;
+.jewellerybutton {
+  font-size: 60px;
   height: 220px;
   width: 400px;
   background-image: url("/images/Jewellery.png");
   background-size: cover;
-  padding-top: 120px;
 }
 
-.wedding {
-  font-size:60px;
+.weddingbutton {
+  font-size: 60px;
   height: 220px;
   width: 400px;
   background-image: url("/images/wedding.avif");
   background-size: cover;
-  padding-top: 120px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 20px 20px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
-
-
-.splash {
-  background-image: url("/images/background_thunderboltsecurity.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-color: rgb(255, 0, 0);
-  min-height: 100%;
-}
-
-nav {
-  position: sticky;
-  background-color: rgba(126, 126, 126, 0.486);
-  top: 0;
 }
 
 ul {
@@ -99,6 +63,7 @@ ul {
   overflow: hidden;
   display: flex;
   justify-content: space-evenly;
+  background-color: #333;
 }
 
 li {
@@ -114,7 +79,15 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;  color: rgb(255, 0, 34);
+  background-color: #111;
+  color: rgb(255, 0, 34);
+}
+
+.container {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
 }
 
 footer {
@@ -123,7 +96,7 @@ footer {
   background-color: black;
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -141,16 +114,8 @@ footer {
   padding: 0px 5px;
 }
 
-@media only screen and (max-width: 600px) {
-  .footeritem {
-    font-size: 14px;
-    padding: 5px 10px;
-  
-  }
-}
-
-.services {
-  background-color: red;
+.section {
+  height: 100vh;
   min-height: 100%;
   color: yellow;
   font-family: "Poppins", sans-serif;
